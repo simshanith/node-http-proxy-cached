@@ -1,0 +1,20 @@
+{
+  "name": "http-proxy-cached",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cached HTTP reverse proxy, for the masses",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Shane Daniel <simrpgman@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simshanith/node-http-proxy-cached.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simshanith/node-http-proxy-cached/issues"
+  },
+  "homepage": "https://github.com/simshanith/node-http-proxy-cached#readme"
+}
