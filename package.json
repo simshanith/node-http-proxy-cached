@@ -16,5 +16,22 @@
   "bugs": {
     "url": "https://github.com/simshanith/node-http-proxy-cached/issues"
   },
-  "homepage": "https://github.com/simshanith/node-http-proxy-cached#readme"
+  "homepage": "https://github.com/simshanith/node-http-proxy-cached#readme",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "debug": "^2.2.0",
+    "lodash": "^4.7.0"
+  },
+  "devDependencies": {
+    "cache-manager": "^2.0.0",
+    "cache-manager-redis": "^0.2.2",
+    "express": "^4.13.4",
+    "http-proxy": "^1.13.2",
+    "mocha": "^2.4.5"
+  },
+  "peerDependencies": {
+    "cache-manager": "^2.0.0",
+    "cache-manager-redis": "^0.2.2",
+    "http-proxy": "^1.13.2"
+  }
 }
