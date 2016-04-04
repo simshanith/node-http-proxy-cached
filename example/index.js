@@ -3,15 +3,8 @@
 var express = require('express');
 var morgan = require('morgan');
 
-var cacheManager = require('cache-manager');
-var redisStore = require('cache-manager-redis');
-
-var redisCache = cacheManager.caching({
-    store: redisStore,
-    return_buffers: true
-});
-
 var cachingMiddlewareFactory = require('../lib/');
+var cache = require('./cache');
 
 var app = express();
 
@@ -21,7 +14,7 @@ var router = express.Router();
 
 router.use(cachingMiddlewareFactory({
   proxyTarget: 'http://localhost:8080/',
-  cache: redisCache
+  cache: cache
 }));
 
 app.use(router);

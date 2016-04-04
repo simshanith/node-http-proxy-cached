@@ -8,7 +8,7 @@
     "start": "pm2 startOrGracefulReload ecosystem.json --watch",
     "stop": "pm2 stop ecosystem.json --watch",
     "lint": "jshint --exclude=./node_modules --reporter=node_modules/jshint-stylish .",
-    "test": "mocha"
+    "test": "npm run-script lint && mocha"
   },
   "author": "Shane Daniel <simrpgman@gmail.com>",
   "license": "MIT",

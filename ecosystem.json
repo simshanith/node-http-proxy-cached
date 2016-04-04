@@ -4,7 +4,8 @@
     "script": "example/index.js",
     "watch": true,
     "env": {
-      "DEBUG": "*"
+      "DEBUG": "*",
+      "REDIS_URL": "redis://localhost:6379/0"
     }
   }]
 }
