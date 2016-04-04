@@ -38,3 +38,10 @@ Temporary Items
 node_modules
 
 
+### https://raw.github.com/github/gitignore/2bf7d8a77a73f7ef7089db449feafada0549af10/Global/redis.gitignore
+
+# Ignore redis binary dump (dump.rdb) files
+
+*.rdb
+
+
