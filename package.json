@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Cached HTTP reverse proxy, for the masses",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "start": "pm2 startOrGracefulReload ecosystem.json --watch",
+    "stop": "pm2 stop ecosystem.json --watch",
+    "lint": "jshint --exclude=./node_modules --reporter=node_modules/jshint-stylish .",
     "test": "mocha"
   },
   "author": "Shane Daniel <simrpgman@gmail.com>",
@@ -21,19 +24,20 @@
     "bluebird": "^3.3.4",
     "debug": "^2.2.0",
     "fresh": "^0.3.0",
+    "http-proxy": "^1.13.2",
     "lodash": "^4.7.0"
   },
   "devDependencies": {
     "cache-manager": "^2.0.0",
     "cache-manager-redis": "^0.2.2",
     "express": "^4.13.4",
-    "http-proxy": "^1.13.2",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
     "mocha": "^2.4.5",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "pm2": "~1.0.2"
   },
   "peerDependencies": {
-    "cache-manager": "^2.0.0",
-    "cache-manager-redis": "^0.2.2",
-    "http-proxy": "^1.13.2"
+    "cache-manager": "^2.0.0"
   }
 }

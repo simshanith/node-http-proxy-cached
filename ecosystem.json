@@ -1,0 +1,10 @@
+{
+  "apps": [{
+    "name": "http-proxy-cached-example",
+    "script": "example/index.js",
+    "watch": true,
+    "env": {
+      "DEBUG": "*"
+    }
+  }]
+}
