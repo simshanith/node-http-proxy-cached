@@ -23,6 +23,6 @@ var cacheOptions = _.assign({
   store: redisStore
 }, redisUrl, redisOptions);
 
-var redisCache = cacheManager.caching(cacheOptions);
+// cacheOptions = {};
 
-module.exports = redisCache;
+module.exports = cacheManager.caching(cacheOptions);
