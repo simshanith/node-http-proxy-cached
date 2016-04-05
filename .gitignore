@@ -45,3 +45,21 @@ node_modules
 *.rdb
 
 
+### https://raw.github.com/github/gitignore/2bf7d8a77a73f7ef7089db449feafada0549af10/Global/SublimeText.gitignore
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+
